@@ -1,8 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
 body {
-    alignment: center;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    animation: fadeIn 3s;
 }
-.center {
+
+.content {
+    position: relative;
+}
+
+.image {
+    margin: 0 auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 25px;
+    width: 160px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.3));
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.3));
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    margin: 0 auto;
+    text-align: center;
+    color: #2F2F2F;
+}
+
+h3 {
+    padding-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+    max-width: 400px;
+    color: #4C4C4C;
+}
+
+.links {
+    text-align: center;
+}
+
+.link {
+    background-color: #FFB954;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: inline-block
+}
+
+.link:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.github {
+    background-color: #353535;
+}
+
+.discord {
+    background-color: #7289DA;
+}
+.faq {
+    background-color: darkslategray;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
